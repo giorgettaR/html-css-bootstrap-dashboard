@@ -13,7 +13,7 @@
 <body class="debug">
 
 
-    <header class="d-flex p-1">
+    <header class="position-sicky top-0 d-flex p-1">
             <a class="h-100 logo" href="#">
                 <img class="img-fluid d-block d-lg-none h-100" src="./img/mobile-logo.png" alt="">
                 <img class="img-fluid d-none d-lg-block h-100 bg-light p-2" src="./img/logo.svg" alt="">
@@ -24,21 +24,41 @@
                     <input class="border rounded-pill w-100 h-100 ps-5" placeholder="Prova a cercare: Lezioni di Laravell" type="text">
                 </div>
             </div>
-            <ul class="h-100 list-unstyled d-none d-lg-flex">
-                <li class="m-auto p-2"><a  href=""><i class="fa-solid fa-list-ul"></i></a></li>
-                <li class="m-auto p-2"><a href=""><i class="fa-solid fa-circle-question"></i></i></a></li>
-                <li class="m-auto p-2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></i></a></li>
+            <ul class="h-100 list-unstyled d-none d-lg-flex align-items-center">
+                <li class="p-2"><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
+                <li class="p-2"><a href=""><i class="fa-solid fa-circle-question"></i></a></li>
+                <li class="p-2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
             </ul>
             <a class="m-auto p-2" href=""><i class="fa-solid fa-bell"></i></a>
     </header>
 
-    <div class="sidebar">
-        <div class="container h-100">
-            <div class="row">
-                <div class="col-12"></div>
-                <div class="col-12 mt-auto"></div>
-            </div>
-        </div>
+    <div class="sidebar position-fixed text-light">
+        <ul class="list-unstyled h-100 d-flex flex-column text-center">
+            <li class="p-2">
+                <a class="text-decoration-none" href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-none d-lg-inline text-decoration-none">Home</span>
+                </a>
+            </li>
+            <li class="p-2">
+                <a class="text-decoration-none" href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="d-none d-lg-inline">Stats</span>
+                </a>
+            </li>
+            <li class="p-2">
+                <a class="text-decoration-none" href="#">
+                    <i class="fa-solid fa-signal"></i>
+                    <span class="d-none d-lg-inline">Signals</span>
+                </a>
+            </li>
+            <li class="p-2 mt-auto justify-self-end">
+                <a class="text-decoration-none" href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-none d-lg-inline">Stats</span>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <main>
