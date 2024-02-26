@@ -13,14 +13,23 @@
 <body class="debug">
 
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-auto"></div>
-                <div class="col flex-grow-1"></div>
-                <div class="col-auto"></div>
+    <header class="d-flex p-1">
+            <a class="h-100 logo" href="#">
+                <img class="img-fluid d-block d-lg-none h-100" src="./img/mobile-logo.png" alt="">
+                <img class="img-fluid d-none d-lg-block h-100 bg-light p-2" src="./img/logo.svg" alt="">
+            </a>
+            <div class="flex-grow-1 p-2">
+                <div class="w-100 h-100 position-relative">
+                    <i class="fa-solid fa-magnifying-glass position-absolute top-50 ps-5 translate-middle"></i>
+                    <input class="border rounded-pill w-100 h-100 ps-5" placeholder="Prova a cercare: Lezioni di Laravell" type="text">
+                </div>
             </div>
-        </div>
+            <ul class="h-100 list-unstyled d-none d-lg-flex">
+                <li class="m-auto p-2"><a  href=""><i class="fa-solid fa-list-ul"></i></a></li>
+                <li class="m-auto p-2"><a href=""><i class="fa-solid fa-circle-question"></i></i></a></li>
+                <li class="m-auto p-2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></i></a></li>
+            </ul>
+            <a class="m-auto p-2" href=""><i class="fa-solid fa-bell"></i></a>
     </header>
 
     <div class="sidebar">
