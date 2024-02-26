@@ -1,0 +1,65 @@
+
+/* STYLE HEADER ------------------------------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header .row {
+    height: 60px;
+}
+
+
+
+/* STYLE SIDEBAR ------------------------------------------- */
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 60px;
+    height: calc(100vh - 60px);
+}
+
+.sidebar  {
+    height: calc(100vh - 60px);
+}
+
+
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 180px;
+    }
+}
+
+/* STYLE MAIN ------------------------------------------- */
+main  {
+    margin-left: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+
+@media (min-width: 1200px) {
+    main {
+        margin-left: 180px;
+    }
+}
+
+
+
+
+
+
+
+/* DEBUG ------------------------------------------- */
+
+.debug header,
+.debug .sidebar{
+    border: dashed black 1px;
+    background-color: aquamarine;
+}
+
+.debug main {
+    border: dashed black 1px;
+    background-color: rgb(4, 119, 81);
+}
