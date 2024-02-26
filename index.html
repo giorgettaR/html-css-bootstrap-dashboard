@@ -17,7 +17,7 @@
             <!-- LOGO -->
             <a class="h-100 logo" href="#">
                 <img class="img-fluid d-block d-lg-none h-100" src="./img/mobile-logo.png" alt="">
-                <img class="img-fluid d-none d-lg-block h-100 bg-light p-2" src="./img/logo.svg" alt="">
+                <img class="img-fluid d-none d-lg-block h-100 p-2" src="./img/logo.svg" alt="">
             </a>
             <!-- SEARCH BAR -->
             <div class="flex-grow-1 p-2">
@@ -40,27 +40,35 @@
             <!-- MENÙ -->
             <li class="p-2">
                 <a class="text-decoration-none" href="#">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="d-none d-lg-inline text-decoration-none">Home</span>
+                    <div class="p-1">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-lg-inline text-decoration-none">Home</span>
+                    </div>
                 </a>
             </li>
             <li class="p-2">
                 <a class="text-decoration-none" href="#">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span class="d-none d-lg-inline">Stats</span>
+                    <div class="p-1">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-lg-inline">Stats</span>
+                    </div>
                 </a>
             </li>
             <li class="p-2">
                 <a class="text-decoration-none" href="#">
-                    <i class="fa-solid fa-signal"></i>
-                    <span class="d-none d-lg-inline">Signals</span>
+                    <div class="p-1">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-lg-inline">Signals</span>
+                    </div>
                 </a>
             </li>
             <!-- SETTINGS -->
             <li class="p-2 mt-auto justify-self-end">
                 <a class="text-decoration-none" href="#">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="d-none d-lg-inline">Stats</span>
+                    <div class="p-1">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-lg-inline">Stats</span>
+                    </div>
                 </a>
             </li>
         </ul>
@@ -70,29 +78,29 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- HERO -->
-                <div class="hero col-12 d-flex flex-column flex-md-row text-light justify-content-between">
-                    <div class="p-2 w-auto col-lg-6">
-                        <span class="fs-1">Boolean</span><span class="my-pill blue">Piano Blaze</span><br>
-                        <span class="my-pill blue">3 app</span>
+                <div class="hero py-2 col-12 d-flex flex-column flex-md-row text-light justify-content-between">
+                    <div class="col p-3 col-lg-6">
+                        <span class="fs-1 pe-1">Boolean</span><span class="my-pill">Piano Blaze</span><br>
+                        <span class="my-pill">3 app</span>
                         <i class="fa-solid fa-angles-right"></i>
-                        <button class="mb-1 text-light btn my-pill blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-list" aria-expanded="false" aria-controls="collapsed-list">
+                        <button class="text-light btn my-pill-round " type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-list" aria-expanded="false" aria-controls="collapsed-list">
                             +
                         </button>               
                         <span class="list-unstyled collapse-horizontal" id="collapsed-list">
-                            <span class="my-pill blue">Boolean mobile app</span>
-                            <span class="my-pill blue">Boolean web app</span>
-                            <span class="my-pill blue">Boolean blog app</span>
+                            <span class="my-pill">Boolean mobile app</span>
+                            <span class="my-pill">Boolean web app</span>
+                            <span class="my-pill">Boolean blog app</span>
                         </span>
                     </div>
-                    <div class="p-2 w-auto">
+                    <div class="col p-3 w-auto">
                         <span>Studenti online negli ultimi 30 minuti</span><br>
                         <span class="fs-1">125</span>
                     </div>
-                    <div class="p-2 w-auto">
-                        <span>
+                    <div class="nuovo-studente col p-3 w-auto ">
+                        <span class="pe-1">
                             Nuovo Studente
-                            <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
                         </span>
+                        <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
                     </div>
                 </div>
                 <!-- PROSSIME CLASSI -->
