@@ -17,6 +17,7 @@ body a {
 
 header {
     height: 60px;
+    background-color: white;
 }
 
 header .fa-magnifying-glass {
