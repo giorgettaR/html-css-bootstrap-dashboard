@@ -3,6 +3,16 @@ body a {
     color: inherit;
 }
 
+.btn.my-pill,
+.my-pill {
+    line-height: 1rem;
+    padding: .100rem .50rem;
+    background-color: rgba(25,91,184,255);
+    border-radius: 20px;
+}
+
+
+
 /* STYLE HEADER ------------------------------------------- */
 
 header {
@@ -42,6 +52,10 @@ header .fa-magnifying-glass {
 main  {
     margin-left: 60px;
     min-height: calc(100vh - 60px);
+}
+
+.hero {
+    background-color: rgba(32,114,230,255);
 }
 
 

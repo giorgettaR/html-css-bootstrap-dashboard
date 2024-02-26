@@ -14,26 +14,30 @@
 
 
     <header class="position-sicky top-0 d-flex p-1">
+            <!-- LOGO -->
             <a class="h-100 logo" href="#">
                 <img class="img-fluid d-block d-lg-none h-100" src="./img/mobile-logo.png" alt="">
                 <img class="img-fluid d-none d-lg-block h-100 bg-light p-2" src="./img/logo.svg" alt="">
             </a>
+            <!-- SEARCH BAR -->
             <div class="flex-grow-1 p-2">
                 <div class="w-100 h-100 position-relative">
                     <i class="fa-solid fa-magnifying-glass position-absolute top-50 ps-5 translate-middle"></i>
                     <input class="border rounded-pill w-100 h-100 ps-5" placeholder="Prova a cercare: Lezioni di Laravell" type="text">
                 </div>
             </div>
+            <!-- MENÙ -->
             <ul class="h-100 list-unstyled d-none d-lg-flex align-items-center">
                 <li class="p-2"><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
                 <li class="p-2"><a href=""><i class="fa-solid fa-circle-question"></i></a></li>
                 <li class="p-2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
             </ul>
-            <a class="m-auto p-2" href=""><i class="fa-solid fa-bell"></i></a>
+            <a class="m-auto p-2 text-warning" href=""><i class="fa-solid fa-bell"></i></a>
     </header>
 
     <div class="sidebar position-fixed text-light">
         <ul class="list-unstyled h-100 d-flex flex-column text-center">
+            <!-- MENÙ -->
             <li class="p-2">
                 <a class="text-decoration-none" href="#">
                     <i class="fa-solid fa-house"></i>
@@ -52,6 +56,7 @@
                     <span class="d-none d-lg-inline">Signals</span>
                 </a>
             </li>
+            <!-- SETTINGS -->
             <li class="p-2 mt-auto justify-self-end">
                 <a class="text-decoration-none" href="#">
                     <i class="fa-solid fa-gear"></i>
@@ -62,10 +67,43 @@
     </div>
 
     <main>
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12 d-flex flex-column"></div>
+        <!-- HERO -->
+        <div class="hero col-12 d-flex flex-column flex-md-row text-light justify-content-between">
+            <div class="p-2 w-auto col-lg-6">
+                <span class="fs-1">Boolean</span><span class="my-pill blue">Piano Blaze</span><br>
+                <span class="my-pill blue">3 app</span>
+                <i class="fa-solid fa-angles-right"></i>
+                <button class="mb-1 text-light btn my-pill blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-list" aria-expanded="false" aria-controls="collapsed-list">
+                    +
+                </button>               
+                <span class="list-unstyled collapse-horizontal" id="collapsed-list">
+                    <span class="my-pill blue">Boolean mobile app</span>
+                    <span class="my-pill blue">Boolean web app</span>
+                    <span class="my-pill blue">Boolean blog app</span>
+                </span>
             </div>
+            <div class="p-2 w-auto">
+                <span>Studenti online negli ultimi 30 minuti</span><br>
+                <span class="fs-1">125</span>
+            </div>
+            <div class="p-2 w-auto">
+                <span>
+                    Nuovo Studente
+                    <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
+                </span>
+            </div>
+        </div>
+        <!-- PROSSIME CLASSI -->
+        <div class="col-12 col-lg-8 d-flex">
+        </div>
+        <!-- FAQ -->
+        <div class="col-12 col-lg-8 d-flex">
+        </div>
+        <!-- TODO -->
+        <div class="col-12 col-lg-4 d-flex">
+        </div>
+        <!-- UTENTI ATTIVI -->
+        <div class="col-12 col-lg-4 d-flex">
         </div>
     </main>
 
