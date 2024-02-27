@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/0b0b1c9877.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="debug">
+<body class="ebug">
 
 
     <header class="position-sticky top-0 d-flex p-1">
@@ -77,198 +77,243 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <!-- HERO -->
-                <div class="hero p-2 col-12 d-flex flex-column flex-md-row-reverse text-light justify-content-between">
-                    <div class="nuovo-studente col p-3 w-auto ">
-                        <span class="pe-1">
-                            Nuovo Studente
-                        </span>
-                        <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
-                    </div>    
-                    <div class="col p-3 w-auto">
-                        <span>Studenti online negli ultimi 30 minuti</span><br>
-                        <span class="fs-1">125</span>
-                    </div>
-                    <div class="col lh-lg p-3 col-lg-6">
-                        <h1 class="fs-1 pe-1 d-inline-block">Boolean</h1><span class="my-pill">Piano Blaze</span><br>
-                        <span class="my-pill">3 app</span>
-                        <i class="fa-solid fa-angles-right"></i>
-                        <button class="text-light btn my-pill-round " type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-list" aria-expanded="false" aria-controls="collapsed-list">
-                            +
-                        </button>               
-                        <span class="list-unstyled collapse-horizontal" id="collapsed-list">
-                            <span class="my-pill blue">Boolean mobile app</span>
-                            <span class="my-pill blue">Boolean web app</span>
-                            <span class="my-pill blue">Boolean blog app</span>
-                        </span>
-                    </div>
+            <!-- HERO -->
+            <div class="hero p-2 col-12 d-flex flex-column flex-md-row-reverse text-light justify-content-between">
+                <div class="nuovo-studente col p-3 w-auto ">
+                    <span class="pe-1">
+                        Nuovo Studente
+                    </span>
+                    <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
+                </div>    
+                <div class="col p-3 w-auto">
+                    <span>Studenti online negli ultimi 30 minuti</span><br>
+                    <span class="fs-1">125</span>
                 </div>
-                <!-- PROSSIME CLASSI -->
-                <div class="prossime-classi col-12 p-2 col-lg-8 d-flex">
-                    <div class="card w-100 border border-light-subtle">
-                        <!-- TITOLO -->
-                        <div class="card-body p-3 border border-light-subtle">
-                            <h2 class="card-title">Prossime Classi</h2>
-                        </div>
-                        <!-- CLASSI -->
-                        <div class="card-body p-3">
-                            <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">Nome</div>
-                                    <div class="detail px-1 d-none d-md-block">Data Inizio</div>
-                                    <div class="detail px-1 d-none d-md-block">ROI</div>
-                                    <div class="detail px-1">Stato</div>
-                                    <div class="detail azioni px-1">Azioni</div>
-                                </li>           
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 25</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">15 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 25</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">15 Feb 202</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 26</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">16 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 27</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">17 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill yellow text-white">Process</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 28</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">18 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 29</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">19 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill red text-white">Failed</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 30</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 31</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">21 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill red text-white">Failed</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                
-                                <li class="list-group-item d-flex fw-light">
-                                    <div class="flex-grow-1 text-start">
-                                        <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
-                                        <span class="mt-1 ps-2">Classe 32</span>
-                                    </div>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">22 Feb 2021</span>
-                                    <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
-                                    <div class="detail mt-1 px-1">
-                                        <span class="stato my-pill green text-white">Done</span>
-                                    </div>
-                                    <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
-                                    </div>
-                                </li>                                                        
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- FAQ -->
-                <div class="col-12 col-lg-8 d-flex">
-                </div>
-                <!-- TODO -->
-                <div class="col-12 col-lg-4 d-flex">
-                </div>
-                <!-- UTENTI ATTIVI -->
-                <div class="col-12 col-lg-4 d-flex">
+                <div class="col lh-lg p-3 col-lg-6">
+                    <h1 class="fs-1 pe-1 d-inline-block">Boolean</h1><span class="my-pill blue">Piano Blaze</span><br>
+                    <span class="my-pill blue">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <button class="text-light btn my-pill-round " type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-list" aria-expanded="false" aria-controls="collapsed-list">
+                        +
+                    </button>               
+                    <span class="list-unstyled collapse-horizontal" id="collapsed-list">
+                        <span class="my-pill blue">Boolean mobile app</span>
+                        <span class="my-pill blue">Boolean web app</span>
+                        <span class="my-pill blue">Boolean blog app</span>
+                    </span>
                 </div>
             </div>
+            <!-- PROSSIME CLASSI -->
+            <div class="prossime-classi col-12 p-2 col-lg-8 d-flex">
+                <div class="card w-100 border-1 border-light-subtle">
+                    <!-- TITOLO -->
+                    <div class="card-body p-3 border-1 border-bottom border-light-subtle">
+                        <h2 class="card-title">Prossime Classi</h2>
+                    </div>
+                    <!-- CLASSI -->
+                    <div class="card-body p-3">
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">Nome</div>
+                                <div class="detail px-1 d-none d-md-block">Data Inizio</div>
+                                <div class="detail px-1 d-none d-md-block">ROI</div>
+                                <div class="detail px-1">Stato</div>
+                                <div class="detail azioni px-1">Azioni</div>
+                            </li>           
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 25</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">15 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 25</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">15 Feb 202</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 26</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">16 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 27</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">17 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill yellow text-white">Process</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 28</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">18 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 29</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">19 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill red text-white">Failed</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 30</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 31</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">21 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill red text-white">Failed</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                
+                            <li class="list-group-item d-flex fw-light">
+                                <div class="flex-grow-1 flex-shrink-0 text-start">
+                                    <img class="tag-icon" src="./img/class-avatar.jpg" alt="">
+                                    <span class="mt-1 ps-2">Classe 32</span>
+                                </div>
+                                <span class="detail mt-1 px-1 d-none d-md-block">22 Feb 2021</span>
+                                <span class="detail mt-1 px-1 d-none d-md-block">20%</span>
+                                <div class="detail mt-1 px-1">
+                                    <span class="stato my-pill green text-white">Done</span>
+                                </div>
+                                <div class="d-inline-block align-middle azioni btm-group detail px-1 text-black-50">
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn d-inline-block"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                            </li>                                                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ -->
+            <div class="faq col-12 col-lg-8 p-2 d-flex">
+                <div class="card w-100 border-1 border-light-subtle">
+                    <!-- TITOLO -->
+                    <div class="card-body p-3 border-1 border-bottom border-light-subtle">
+                        <h2 class="card-title">F.A.Q.</h2>
+                    </div>
+                    <!-- QUESTIONS -->
+                    <div class="card-body p-3 accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Come aggiungere un nuovo studente?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis vero consequatur ratione quae sunt repudiandae, ut quo maxime ullam, non placeat omnis quos obcaecati cupiditate vel sapiente numquam asperiores!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                                    Come posso accedere alle informazioni del mio account?
+                                </button>
+                            </h2>
+                            <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis vero consequatur ratione quae sunt repudiandae, ut quo maxime ullam, non placeat omnis quos obcaecati cupiditate vel sapiente numquam asperiores!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                                    Posso usare questa dashboard da mobile?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis vero consequatur ratione quae sunt repudiandae, ut quo maxime ullam, non placeat omnis quos obcaecati cupiditate vel sapiente numquam asperiores!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO -->
+            <div class="col-12 col-lg-4 d-flex">
+            </div>
+            <!-- UTENTI ATTIVI -->
+            <div class="col-12 col-lg-4 d-flex">
+            </div>
+
         </div>
     </main>
 
