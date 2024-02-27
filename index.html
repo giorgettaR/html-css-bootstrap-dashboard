@@ -10,10 +10,10 @@
     <script src="https://kit.fontawesome.com/0b0b1c9877.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="ebug">
+<body class="ebug position-relative">
 
 
-    <header class="position-sticky top-0 d-flex p-1">
+    <header class="position-sticky top-0 d-flex p-1 align-items-center">
             <!-- LOGO -->
             <a class="h-100 logo" href="#">
                 <img class="img-fluid d-block d-lg-none h-100" src="./img/mobile-logo.png" alt="">
@@ -27,12 +27,22 @@
                 </div>
             </div>
             <!-- MENÙ -->
-            <ul class="h-100 list-unstyled d-none d-lg-flex align-items-center">
+            <ul class="m-0 list-unstyled d-none d-lg-flex align-items-center">
                 <li class="p-2"><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
                 <li class="p-2"><a href=""><i class="fa-solid fa-circle-question"></i></a></li>
                 <li class="p-2"><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
             </ul>
-            <a class="m-auto p-2 text-warning" href=""><i class="fa-solid fa-bell"></i></a>
+            <div class="dropdown">
+                <button class="d-inline-block bg-transparent border-0 align-middle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="m-auto p-2 text-warning" href=""><i class="fa-solid fa-bell"></i></a>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                
+            </div>
     </header>
 
     <div class="sidebar position-fixed text-light">
@@ -83,7 +93,9 @@
                         <span class="pe-1">
                             Nuovo Studente
                         </span>
-                        <button type="button" class="btn btn-primary border-1 border-light fw-bold">+</button>
+                        <button class="btn btn-primary border-1 border-light fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            +
+                          </button>
                     </div>    
                     <div class="col p-3 w-auto">
                         <span>Studenti online negli ultimi 30 minuti</span><br>
@@ -337,7 +349,7 @@
                         <!-- TITOLO -->
                         <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Card title</h3>
+                            <h3 class="card-title">Utenti Attivi</h3>
                             <p class="card-text">Lista degli utenti in piattaforma nell'ultimo mese</p>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -356,6 +368,73 @@
         </div>
     </main>
 
+    <div class="new-student-form offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un Nuovo Studente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row py-2 flex-wrap">
+                <div class="col-12 col-lg-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="cognome" class="form-label">Cognome</label>
+                    <input type="text" id="cognome" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" id="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>  
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" id="password" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12">
+                    <label for="indirizzo" class="form-label">Indirizzo</label>
+                    <input type="text" id="indirizzo" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <label for="città" class="form-label">Città</label>
+                    <input type="text" id="città" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <label for="stato" class="form-label">Stato</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Francia</option>
+                        <option value="3">Germania</option>
+                      </select>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <label for="cap" class="form-label">CAP</label>
+                    <input type="text" id="cap" class="form-control" aria-label="First name">
+                </div>
+                <div class="col-12">
+                    <label for="foto" class="form-label">Foto</label>
+                    <div class="input-group">
+                        <button class="btn btn-secondary"> Scegli file</button>
+                        <input type="text" id="email" class="form-control" placeholder="nessun file selezionato" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>  
+                </div>
+                <div class="col-12">
+                    <input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input">
+                <span class="ps-1">Seleziona per proseguire</span>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary">Salva</button>
+                    <button type="button" class="btn btn-warning">Svuota</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
