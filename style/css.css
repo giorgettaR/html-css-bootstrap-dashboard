@@ -1,8 +1,6 @@
-
 body a {
     color: inherit;
 }
-
 
 .my-pill {
     line-height: 1rem;
@@ -158,13 +156,9 @@ div.new-student-form {
     color: white;
 }
 
-
-
 /* DEBUG ------------------------------------------- */
 
-
-
-.debug main {
+.debug  {
     border: dashed black 1px;
     background-color: rgb(4, 119, 81);
 }
