@@ -127,6 +127,12 @@ main  {
     border-bottom: solid 1px rgba(128, 128, 128, 0.295);
 }
 
+/* STYLE UTENTI ATTIVI --------------------------- */
+
+.utenti-attivi a {
+    color: #0d6efd;
+}
+
 /* ANIMATIONS --------------------------------------- */
 
 .sidebar a div:hover {
