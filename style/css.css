@@ -7,26 +7,39 @@ body a {
 .my-pill {
     line-height: 1rem;
     padding: .130rem .50rem;
-    background-color: rgba(25,91,184,255);
+    padding-bottom: .35rem;
     border-radius: 20px;
     white-space: nowrap;
 }
 
+.my-pill.blue {
+    background-color: rgba(25,91,184,255);
+}
+
+.my-pill.green {
+    background-color: rgba(41,143,98,255);
+}
+
+.my-pill.yellow {
+    background-color: rgba(254,192,24,255);
+}
+
+.my-pill.red {
+    background-color: rgba(219,53,68,255);
+}
+
 .btn.my-pill-round {
-    /* vertical-align: middle; */
     font-size: 1.5em;
     text-align: center;
     vertical-align: middle;
     line-height: 4em; /*or you could use 4em*/
     line-height: 1.5rem;
     padding: .120rem .40rem;
-    padding-bottom: 0.50rem;
+    padding-bottom: 0.3rem;
     background-color: rgba(25,91,184,255);
     border-radius: 100%;
     white-space: nowrap;
 }
-
-
 
 /* STYLE HEADER ------------------------------------------- */
 
@@ -61,10 +74,19 @@ header .fa-magnifying-glass {
 }
 
 /* STYLE MAIN ------------------------------------------- */
+
 main  {
     margin-left: 60px;
     min-height: calc(100vh - 60px);
 }
+
+@media (min-width: 992px) {
+    main {
+        margin-left: 180px;
+    }
+}
+
+/* STYLE HERO ------------------------------------------- */
 
 .hero {
     background-color: rgba(32,114,230,255);
@@ -74,14 +96,25 @@ main  {
     padding-bottom: 0.5rem;
 }
 
+/* STYLE PROSSIME CLASSI --------------------------- */
 
-@media (min-width: 992px) {
-    main {
-        margin-left: 180px;
-    }
+.prossime-classi .tag-icon {
+    height: 2rem;
 }
 
+.prossime-classi .stato {
+    line-height: .85rem;
+    font-size: .85rem;
+}
 
+.prossime-classi .detail {
+    width: 5.5rem;
+}
+
+.prossime-classi .azioni button {
+    border: solid grey 2px;
+    padding: .175rem .55rem;
+}
 
 
 /* ANIMATIONS --------------------------------------- */
